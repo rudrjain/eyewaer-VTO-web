@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eyeglasses Viewer</title>
+    <script>
+        console.log = function() {};
+    </script>
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+        "mediapipear-face-three": "./mediapipear.prod.js" } }
+    </script>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+    <div id="control">
+        <div id="buttonsContainer"></div>
+    </div>
+    <div id="container"></div>
+    <div id="loadingText" style="display: none">Loading Eyewear...</div>
+</body>
+
+</html>

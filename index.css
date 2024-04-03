@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+  }
+
+  #container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #control {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  #buttonsContainer {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  button {
+    width: 100px; /* Adjust the width and height to make the buttons square */
+    height: 100px;
+    border: none;
+    background-color: #ddd; /* Default background color */
+  }
+
+  button.highlighted {
+    background-color: yellow; /* Highlighted background color */
+  }
+  #loadingText {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Semi-transparent white background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
